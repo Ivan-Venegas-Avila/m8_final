@@ -1,0 +1,40 @@
+en la vista show puse ese codigo:
+
+Ev
+Evelin García
+22:11
+<img style="width: 200px;" src="<%=@book.image_url%>" />
+
+Ev
+Evelin García
+22:12
+y en la vista form va:
+
+Ev
+Evelin García
+22:12
+<div class="field">
+<%= form.label :image_url %>
+<%= form.text_field :image_url %>
+</div>
+
+Ev
+Evelin García
+22:13
+y en el index dentro del siguiente parámetro:
+
+Ev
+Evelin García
+22:13
+<tbody>
+<% @books.each do |book| %>
+
+Ev
+Evelin García
+22:14
+va:
+
+Ev
+Evelin García
+22:14
+<td><%= book.image_url %></td>

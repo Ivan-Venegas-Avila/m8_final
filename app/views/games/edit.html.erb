@@ -1,0 +1,10 @@
+<h1>Editing Game</h1>
+<div class=container-fluid>
+  <%= render 'form', game: @game %>
+</div>
+<div class=container-fluid>
+  <div class="btn-group" role="group" aria-label="Basic example" >
+   <button type="button" class="btn btn-light"><%= link_to 'Show', @game %> </button>
+   <button type="button" class="btn btn-light"><%= link_to 'Back', games_path %></button>
+  </div>
+</div>

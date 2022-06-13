@@ -1,0 +1,77 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import url(https://fonts.google.com/);
+body{
+ background-color: rgb(92, 92, 92);
+}
+
+.header{
+  border: 1px solid black;
+  background-image: url(https://cdn.atomix.vg/wp-content/uploads/2022/01/playstation-.jpg);
+  height: 500px;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+
+}
+.descripcion{
+  margin: 70 px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+* {
+  text-align: center;
+}
+
+.container-fluid{
+  width: 75%;
+  border-radius: 15px;
+  border: 3px solid black;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: rgba(106, 106, 247, 0.715);
+
+
+
+}
+
+h1{
+  color:white
+}
+td{
+  float: none;
+  margin: 5px black solid;
+}
+
+/* modificacion del boton newgame*/
+.botongame{
+  display: inline-block ;
+  position: relative;
+  color:white;
+  text-decoration: none;
+
+}
+
+.botongame::after,.botongame::before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color:currentColor;
+  top: 1.5em;
+  transform: scale(0);
+  transition: all 0.2s ease-in;
+}
+.botongame:hover::before,.botongame:hover::after{
+  transform: scale(1);
+}
+.botongame::before{
+  left: -140px;
+}
+
+.botongame::after{
+  right: -140px;
+}
+
+/*fin boton newgame*/
